@@ -8,6 +8,8 @@ use Carbon\Carbon;
 
 class Author extends Model
 {
+    use HasFactory;
+
     protected $guarded = [];
 
     protected $dates = ['dob']; //instances of dates cast to Carbon date
